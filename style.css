@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Section */
+.navContainer{
+    font-family: 'Roboto Slab', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+    gap: 300px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.navContainer>div:first-child{
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: #ff2f2f;
+}
+
+.navContainer>div:nth-child(2){
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navContainer>div:nth-child(2)>button{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 700;
+    background-color: #ff2f2f;
+    color: white;
+    padding: 4px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Introduction Section */
+.introContainer{
+    height: 60vh;
+    background: linear-gradient(to right, #5d7f88 0%, #3f3d80 33%, #142e6e 100%);
+    display: flex;
+}
