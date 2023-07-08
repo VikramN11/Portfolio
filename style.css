@@ -8,10 +8,11 @@
 .navContainer{
     font-family: 'Roboto Slab', sans-serif;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding: 1%;
-    gap: 300px;
+    padding: 0.6%;
+    gap: 20%;
+    border: 1px solid;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
@@ -22,10 +23,18 @@
 }
 
 .navContainer>div:nth-child(2){
+    min-width: 48%;
     font-size: 1.2vw;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 8%;
+    border: 1px solid;
+}
+
+.navContainer>div:nth-child(2)>p a{
+    text-decoration: none;
+    color: black;
 }
 
 .navContainer>div:nth-child(2)>button{
@@ -34,14 +43,77 @@
     font-weight: 700;
     background-color: #ff2f2f;
     color: white;
-    padding: 4px;
+    padding: 1.5%;
     border: none;
     border-radius: 10px;
 }
 
 /* Introduction Section */
 .introContainer{
-    height: 60vh;
+    font-family: 'Roboto Slab', sans-serif;
+    color: white;
+    height: 80vh;
     background: linear-gradient(to right, #5d7f88 0%, #3f3d80 33%, #142e6e 100%);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14%;
+}
+
+.introContainer>div{
+     width: 40%;
+     border: 1px solid red;
+}
+
+.introContainer>div>div>p:first-child{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.6vw;
+}
+
+.introContainer>div>div>p:nth-child(2){
+    font-size: 4vw;
+}
+
+.typing-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .typing-animation {
+    display: inline-block;
+    overflow: hidden; /* Ensure that the text doesn't overflow */
+    white-space: nowrap; /* Prevent line breaks */
+    border-right: 0.1em solid; /* Add a blinking cursor effect */
+  }
+
+  #line1{
+    animation: typing 3s steps(30), blink-caret 0.5s step-end infinite;
+  }
+
+  #line2{
+    display: none;
+  }
+  
+  @keyframes typing {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: transparent; }
+  }
+  
+ 
+
+.introContainer>div>h2{
+    font-size: 3vw;
+}
+
+.introContainer>div>p:last-child{
+    font-size: 1.3vw;
+}
+
+.introContainer>img{
+    width: 23%;
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Mulish:wght@500&family=Nunito:wght@200&family=Poppins:wght@600&family=Roboto+Slab:wght@300;500;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Mulish:wght@500&family=Nunito:wght@200&family=Poppins:wght@600&family=Roboto+Slab:wght@300;500;800&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
@@ -16,11 +16,11 @@
         <p>Vikram Navik</p>
       </div>
       <div>
-        <p>Home</p>
-        <p>About Me</p>
-        <p>Skills</p>
-        <p>Projects</p>
-        <p>Contact</p>
+        <p><a href="#">Home</a></p>
+        <p><a href="#">About Me</a></p>
+        <p><a href="#">Skills</a></p>
+        <p><a href="#">Projects</a></p>
+        <p><a href="#">Contact</a></p>
         <button>Resume</button>
       </div>
     </div>
@@ -28,17 +28,18 @@
     <!-- Introduction Section -->
     <div class="introContainer">
         <div>
-          <p>Hi, my name is</p>
-          <h1>Vikram Navik.</h1>
+          <div class="typing-container">
+            <p class="typing-animation" id="line1">Hi, my name is</p>
+            <p class="typing-animation" id="line2">Vikram Navik.</p>
+          </div>
           <h2>I build things for the web.</h2>
           <p>I am an aspiring Full Stack Web Developer building projects on the MERN stack.
            I've built three collaborative and one individual project with the help of HTML,
             CSS, Javascript, React, NodeJs, MongoDB, and Express.
           </p>
         </div>
-        <div>
-            <img src="./doc/bluewillow2.png" alt="image1">
-        </div>
+        <img src="./doc/bluewillow2.png" alt="image1">
     </div>
 </body>
+<script src="index.js"></script>
 </html>
