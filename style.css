@@ -10,6 +10,10 @@ body{
 
 /* Navbar Section */
 .navContainer{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
     font-family: 'Roboto Slab', sans-serif;
     display: flex;
     justify-content: center;
@@ -48,6 +52,11 @@ body{
     padding: 1.5%;
     border: none;
     border-radius: 10px;
+}
+
+.navContainer>div:nth-child(2)>button>a{
+    text-decoration: none;
+    color: white;
 }
 
 /* Introduction Section */
@@ -117,13 +126,23 @@ body{
 .introContainer>img{
     max-width: 20%;
     height: auto;
+    animation: introImage 3s linear 2s infinite;
 }
+
+@keyframes introImage {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 
 /* About Me */
 
 .aboutContainer{
     font-family: 'Roboto Slab', sans-serif;
-    padding: 6vh 0 6vh 0;
+    padding: 10vh 0 10vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,10 +162,44 @@ body{
 }
 
 .aboutContainer>div>h3{
-    font-size: 2.8vw;
+    font-size: 3vw;
 }
 
 .aboutContainer>div>p{
     font-size: 1.2vw;
     text-align: justify;
 }
+
+/* My Statistics Section */
+.mystatContainer{
+    font-family: 'Roboto Slab', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mystatContainer>h3{
+    font-size: 3vw;
+}
+
+.mystatContainer>div{
+    padding: 8vh 0 10vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mystatContainer>div>img:first-child{
+    width: 40vw;
+    height: auto;
+}
+.mystatContainer>div>img:last-child{
+    width: 40vw;
+    height: 34.5vh;
+}
+
+/* My Github Calendar Section */
+/* #github_calendar{
+
+} */
