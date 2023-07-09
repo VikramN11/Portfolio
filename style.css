@@ -6,7 +6,6 @@
 
 body{
     font-family: 'Roboto Slab', sans-serif;
-    font-size: 16px;
 }
 
 /* Navbar Section */
@@ -17,24 +16,22 @@ body{
     align-items: center;
     padding: 0.6%;
     gap: 20%;
-    border: 1px solid;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .navContainer>div:first-child{
-    font-size: 150%;
+    font-size: 1.5vw;
     font-weight: 700;
     color: #ff2f2f;
 }
 
 .navContainer>div:nth-child(2){
-    min-width: 48%;
-    font-size: 110%;
+    min-width: 45%;
+    font-size: 1.1vw;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8%;
-    border: 1px solid;
 }
 
 .navContainer>div:nth-child(2)>p a{
@@ -44,7 +41,7 @@ body{
 
 .navContainer>div:nth-child(2)>button{
     font-family: 'Roboto Slab', sans-serif;
-    font-size: 110%;
+    font-size: 1.1vw;
     font-weight: 700;
     background-color: #ff2f2f;
     color: white;
@@ -61,19 +58,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 12em;
 }
 
 .introContainer>div{
-     border: 1px solid red;
+     width: 42%;
 }
 
 .introContainer>div>div>p:first-child{
     font-family: 'Rajdhani', sans-serif;
-    font-size: 150%;
+    font-size: 1.4vw;
 }
 
 .introContainer>div>div>p:nth-child(2){
-    font-size: 380%;
+    font-size: 4vw;
 }
 
 .typing-container {
@@ -109,14 +107,46 @@ body{
  
 
 .introContainer>div>h2{
-    font-size: 280%;
+    font-size: 2.8vw;
 }
 
 .introContainer>div>p:last-child{
-    width: 46%;
-    font-size: 120%;
+    font-size: 1.2vw;
 }
 
 .introContainer>img{
-    width: 20%;
+    max-width: 20%;
+    height: auto;
+}
+
+/* About Me */
+
+.aboutContainer{
+    font-family: 'Roboto Slab', sans-serif;
+    padding: 6vh 0 6vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.aboutContainer>img{
+    max-width: 35%;
+    height: auto;
+    border-radius: 50%;
+    border: 6px solid #5d7f88;
+}
+
+
+.aboutContainer>div{
+    width: 35%;
+}
+
+.aboutContainer>div>h3{
+    font-size: 2.8vw;
+}
+
+.aboutContainer>div>p{
+    font-size: 1.2vw;
+    text-align: justify;
 }
