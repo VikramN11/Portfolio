@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Roboto Slab', sans-serif;
 }
@@ -116,11 +120,29 @@ body{
  
 
 .introContainer>div>h2{
-    font-size: 2.8vw;
+    font-size: 2.6vw;
 }
 
 .introContainer>div>p:last-child{
     font-size: 1.2vw;
+    text-align: justify;
+}
+
+.introContainer>div>button{
+    font-family: 'Roboto Slab', sans-serif;
+    margin-top: 1%;
+    font-size: 1.2vw;
+    font-weight: 700;
+    background-color: #ff2f2f;
+    color: white;
+    padding: 1.8%;
+    border: none;
+    border-radius: 10px;
+}
+
+.introContainer>div>button>a{
+    text-decoration: none;
+    color: white;
 }
 
 .introContainer>img{
@@ -142,7 +164,7 @@ body{
 
 .aboutContainer{
     font-family: 'Roboto Slab', sans-serif;
-    padding: 10vh 0 10vh 0;
+    padding: 13vh 0 13vh 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,6 +191,76 @@ body{
     font-size: 1.2vw;
     text-align: justify;
 }
+
+/* My Skill Section */
+.skillContainer{
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+   border: 1px solid red;
+}
+
+.skillContainer h1{
+    text-align: center;
+    font-size: 3vw;
+}
+
+.skillContainer .skillInner{
+    display: grid;
+   place-items: center;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: auto;
+   row-gap: 30%;
+   padding: 10vh 0 10vh 0;
+}
+
+.skillContainer .skillInner .flip-card {
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+  }
+  
+  
+  .skillContainer .skillInner .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .skillContainer .skillInner .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .skillContainer .skillInner .flip-card-front, .flip-card-back i {
+    font-size: 4vw;
+  }
+  
+  .skillContainer .skillInner .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem;
+  }
+  
+  /* .skillContainer .flip-card-front {
+    color: coral;
+  } */
+  
+  .skillContainer .skillInner .flip-card-back {
+    transform: rotateY(180deg);
+  }
+  
+  
 
 /* My Statistics Section */
 .mystatContainer{

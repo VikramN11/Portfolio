@@ -17,7 +17,11 @@ setTimeout(() => {
 
 // Resume Button opening on new tab function
 
-document.getElementById("resumeButton").addEventListener("click", ()=>{
+document.getElementById("resumeButton1").addEventListener("click", ()=>{
+  window.open(resume_link);
+})
+
+document.getElementById("resumeButton2").addEventListener("click", ()=>{
   window.open(resume_link);
 })
 

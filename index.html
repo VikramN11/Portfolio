@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Mulish:wght@500&family=Nunito:wght@200&family=Poppins:wght@600&family=Roboto+Slab:wght@300;500;800&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
@@ -16,33 +17,37 @@
         <p>Vikram Navik</p>
       </div>
       <div>
-        <p><a href="#">Home</a></p>
-        <p><a href="#">About Me</a></p>
-        <p><a href="#">Skills</a></p>
-        <p><a href="#">Projects</a></p>
-        <p><a href="#">Contact</a></p>
-        <button><a href="./doc/Vikram_Resume.pdf" id="resumeButton" target="_blank" download="Vikram_Resume" title='Resume'>Resume</a></button>
+        <p><a href="#home">Home</a></p>
+        <p><a href="#about">About Me</a></p>
+        <p><a href="#skill">Skills</a></p>
+        <p><a href="#projects">Projects</a></p>
+        <p><a href="#contact">Contact</a></p>
+        <button><a href="./doc/Vikram_Resume.pdf" id="resumeButton1" target="_blank" download="Vikram_Resume" title='Resume'>Resume</a></button>
       </div>
     </div>
 
     <!-- Introduction Section -->
-    <div class="introContainer">
+    <div class="introContainer" id="home">
         <div>
           <div class="typing-container">
             <p class="typing-animation" id="line1">Hi, my name is</p>
             <p class="typing-animation" id="line2">Vikram Navik.</p>
           </div>
           <h2>I build things for the web.</h2>
-          <p>I am an aspiring Full Stack Web Developer building projects on the MERN stack.
-           I've built three collaborative and one individual project with the help of HTML,
-            CSS, Javascript, React, NodeJs, MongoDB, and Express.
+          <p>Welcome to my portfolio ! I am a highly skilled developer with a specialization 
+            in the MERN stack - MongoDB, Express.js, React.js, and Node.js. With a passion for 
+            crafting innovative solutions, I have embarked on a journey of creating diverse 
+            projects that showcase the full potential of this powerful technology stack. From 
+            dynamic web applications to interactive user interfaces, my work reflects a perfect 
+            blend of creativity and technical expertise.
           </p>
+          <button><a href="./doc/Vikram_Resume.pdf" id="resumeButton2" target="_blank" download="Vikram_Resume" title='Resume'>Resume</a></button>
         </div>
         <img src="./doc/bluewillow2.png" alt="image1">
     </div>
 
     <!-- About Me Section -->
-    <div class="aboutContainer">
+    <div class="aboutContainer" id="about">
       <img src="./doc/profile.jpg" alt="vikrampic" />
       <div className={styles.secdiv}>
        <h3>About Me</h3>
@@ -52,6 +57,138 @@
            After graduation, I have done a job in Food Industry as Quality Executive for one year and nine months.
            My interests are coding, watching News, and playing cricket.</p>
       </div>
+   </div>
+
+   <!-- Skills Section -->
+   <div class="skillContainer" id="skill">
+    <h1>SKILLS</h1>
+    <!-- 1. card -->
+    <div class="skillInner">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="devicon-html5-plain-wordmark colored"></i>
+            </div>
+            <div class="flip-card-back">
+              <i class="devicon-html5-plain-wordmark colored"></i>
+            </div>
+        </div>
+      </div>
+      <!-- 2. card -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="devicon-css3-plain-wordmark colored"></i>
+            </div>
+            <div class="flip-card-back">
+              <i class="devicon-css3-plain-wordmark colored"></i>
+            </div>
+        </div>
+      </div>
+      <!-- 3. card -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div class="flip-card-back">
+              <i class="devicon-javascript-plain colored"></i>
+            </div>
+        </div>
+      </div>
+      <!-- 4. card -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="devicon-react-original colored"></i>
+            </div>
+            <div class="flip-card-back">
+              <i class="devicon-react-original colored"></i>
+            </div>
+        </div>
+      </div>
+  
+      <!-- 5. card -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="devicon-nodejs-plain colored"></i>
+            </div>
+            <div class="flip-card-back">
+              <i class="devicon-nodejs-plain colored"></i>
+            </div>
+        </div>
+      </div>
+  
+      <!-- 6. card -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="devicon-express-original-wordmark colored"></i>
+            </div>
+            <div class="flip-card-back">
+              <i class="devicon-express-original-wordmark colored"></i>
+            </div>
+        </div>
+      </div>
+  
+      <!-- 7. card -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="devicon-mongodb-plain-wordmark colored"></i>
+            </div>
+            <div class="flip-card-back">
+              <i class="devicon-mongodb-plain-wordmark colored"></i>
+            </div>
+        </div>
+      </div>
+  
+      <!-- 8. card -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="devicon-git-plain colored"></i>
+            </div>
+            <div class="flip-card-back">
+              <i class="devicon-git-plain colored"></i>
+            </div>
+        </div>
+      </div>
+      <!-- 9. card -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="devicon-github-original-wordmark colored"></i>
+            </div>
+            <div class="flip-card-back">
+              <i class="devicon-github-original-wordmark colored"></i>
+            </div>
+        </div>
+      </div>
+      <!-- 10. card -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="devicon-npm-original-wordmark colored"></i> 
+            </div>
+            <div class="flip-card-back">
+              <i class="devicon-npm-original-wordmark colored"></i> 
+            </div>
+        </div>
+      </div>
+      <!-- 11. card -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <i class="devicon-jest-plain colored"></i>
+            </div>
+            <div class="flip-card-back">
+              <i class="devicon-jest-plain colored"></i>
+            </div>
+        </div>
+      </div>
+    </div>
    </div>
 
 
