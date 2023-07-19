@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Mulish:wght@500&family=Nunito:wght@200&family=Poppins:wght@600&family=Roboto+Slab:wght@300;500;800&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
@@ -202,10 +203,88 @@
    </div>
 
    <!-- My Github Calendar Section -->
-   <div>
+   <div class="calendar">
+      <!-- Loading stuff -->
+      Loading the data just for you.
+   </div>
+   <!-- <div>
     <h3>My Github Calendar</h3>
     <div id="github_calendar"></div>
+   </div> -->
+
+   <!-- Project Section -->
+   <div class="proContainer">
+    <div class="card">
+       <img class="image" src="./doc/1800flowers.png" alt="1800flowers">
+       <div class="content">
+        <h4>1800-flowers Clone</h4>
+        <p>Ecommerce website where you can buy different gifts for diffrent occassions.
+          A collaborative project built by a team of 5 executed in 7 days.
+       </p>
+       <a href="https://bblooms.vercel.app/" target="_blank"><button>Check it out!</button></a>
+       <a href="https://github.com/swati082001/bBlooms-1800Flowers-clone" target="_blank"><button>Github Link</button></a>
+       </div>
+     </div>
+
+     <div class="card">
+      <div class="image">
+        <img src="./doc/1800flowers.png" alt="1800flowers">
+      </div>
+       <div class="content">
+        <h4>1800-flowers Clone</h4>
+        <p>Ecommerce website where you can buy different gifts for diffrent occassions.
+          A collaborative project built by a team of 5 executed in 7 days.
+       </p>
+       <a href="https://bblooms.vercel.app/" target="_blank"><button>Check it out!</button></a>
+       <a href="https://github.com/swati082001/bBlooms-1800Flowers-clone" target="_blank"><button>Github Link</button></a>
+       </div>
+     </div>
+
+
+     <div class="card">
+      <div class="image">
+        <img src="./doc/1800flowers.png" alt="1800flowers">
+      </div>
+       <div class="content">
+        <h4>1800-flowers Clone</h4>
+        <p>Ecommerce website where you can buy different gifts for diffrent occassions.
+          A collaborative project built by a team of 5 executed in 7 days.
+       </p>
+       <a href="https://bblooms.vercel.app/" target="_blank"><button>Check it out!</button></a>
+       <a href="https://github.com/swati082001/bBlooms-1800Flowers-clone" target="_blank"><button>Github Link</button></a>
+       </div>
+     </div>
+
+
+     <div class="card">
+      <div class="image">
+        <img src="./doc/1800flowers.png" alt="1800flowers">
+      </div>
+       <div class="content">
+        <h4>1800-flowers Clone</h4>
+        <p>Ecommerce website where you can buy different gifts for diffrent occassions.
+          A collaborative project built by a team of 5 executed in 7 days.
+       </p>
+       <a href="https://bblooms.vercel.app/" target="_blank"><button>Check it out!</button></a>
+       <a href="https://github.com/swati082001/bBlooms-1800Flowers-clone" target="_blank"><button>Github Link</button></a>
+       </div>
+     </div>
    </div>
 </body>
 <script src="index.js"></script>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script>
+  // My Github Calendar
+GitHubCalendar(".calendar", "VikramN11");
+
+// or enable responsive functionality:
+GitHubCalendar(".calendar", "VikramN11", { responsive: true });
+
+// Use a proxy
+GitHubCalendar(".calendar", "VikramN11", {
+   proxy (VikramN11) {
+     return fetch(`https://your-proxy.com/github?user=${VikramN11}`)
+   }
+}).then(r => r.text())
+</script>
 </html>
